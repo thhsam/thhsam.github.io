@@ -10,7 +10,7 @@
     connect() {
       // return navigator.bluetooth.requestDevice({filters:[{services:[ 'heart_rate' ]}]})
       return navigator.bluetooth.requestDevice({filters:[{
-        namePrefix: 'BodyTrak'}],
+        namePrefix: ['BodyTrak']}],
         optionalServices: ['battery_service']
       })
       .then(device => {
